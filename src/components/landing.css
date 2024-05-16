@@ -1,0 +1,50 @@
+#home{
+    /* background-image: url('../../public/assets/landing\ bg.png');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 20px;
+    overflow: hidden;
+}
+.text{
+    color: var(--text-color);
+    text-align: start;
+    width: 50%;
+    height: auto;
+}
+.text .roles{
+    color: var(--secondry-color);
+}
+.text .icons{
+    display: flex;
+    gap: 10px;
+}
+.text .icons .i{
+    font-size: 1.5rem;
+}
+
+
+.img{
+    margin-right: 3%;
+    width: 50%;
+    position: relative;
+    min-height: 400px;
+}
+.img img{
+    width: 350px;
+    height: 278px;
+    position: absolute;
+}
+.img #point-img{
+    left: 15%;
+    opacity: 0.3;
+}
+.img #computer-img{
+    border-radius: 15%;
+    right: 15%;
+    bottom: 0;
+}
