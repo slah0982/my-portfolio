@@ -1,0 +1,12 @@
+#skills{
+    text-align: center;
+    color: var(--text-color);
+    min-height: var(--sectons-hight);
+}
+.main-header{
+    font-weight: bold;
+}
+
+.doughnut{
+    max-width: 200px;
+}

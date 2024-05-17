@@ -2,6 +2,7 @@ import './App.css';
 import Cursor from './components/animated cursor';
 import Header from './components/header';
 import Landing from './components/landing';
+import Skills from './components/skills';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Cursor/>
       <Header />
       <Landing />
+      <Skills />
+      <div style={{height: '500px'}}></div>
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.prograss{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 5s;
+}
+.inner-contents{
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

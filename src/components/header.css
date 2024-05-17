@@ -4,7 +4,9 @@
     padding: 20px;
     width: -webkit-fill-available;
     position: fixed;
+    z-index: 2;
     background-color: var(--primary-color);
+    border: 1px solid var(--lines-color);
 }
 .logo{
     color: var(--text-color);

@@ -2,6 +2,8 @@
   --primary-color: #004138;
   --secondry-color: #4EE8C8;
   --text-color: #FFFFFF;
+  --lines-color: #001E19;
+  --sectons-hight: 80vh;
 }
 
 .App {
