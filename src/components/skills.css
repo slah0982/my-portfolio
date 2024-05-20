@@ -2,19 +2,14 @@
     text-align: center;
     color: var(--text-color);
     min-height: var(--sectons-hight);
-    padding: 100px 0;
-}
-.main-header{
-    font-weight: bold;
-    margin-bottom: 100px;
 }
 
-.container{
+#skills .container{
     display: flex;
     padding: 20px;
     justify-content: space-between;
 }
 
-.doughnut{
+#skills .doughnut{
     max-width: 200px;
 }

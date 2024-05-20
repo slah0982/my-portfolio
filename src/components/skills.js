@@ -1,6 +1,7 @@
 import './skills.css'
 import { useEffect, useRef, useState } from 'react';
 import PrograssBar from './skill-prograss';
+import MainHeader from './main-header';
 
 
 
@@ -29,7 +30,7 @@ export default function Skills(){
 
     return(
         <section ref={skillsRef} id="skills">
-            <h1 className="main-header">My Skills</h1>
+            <MainHeader title={"My Skills"}/>
             <div className='container'>
                 <div className="doughnut">
                     <PrograssBar 
