@@ -13,9 +13,7 @@ export default function Skills(){
         const handleScroll = () => {
             if (isElementInViewport(skillsRef.current)) {
                 console.log('showed')
-                setPercentage(90)
-            }else{
-                setPercentage(0)
+                setPercentage(97)
             }
         };
     
@@ -32,20 +30,43 @@ export default function Skills(){
     return(
         <section ref={skillsRef} id="skills">
             <h1 className="main-header">My Skills</h1>
-            <div className="doughnut">
-                <PrograssBar 
-                    percentColor='var(--lines-color)'
-                    emptyColor='var(--secondry-color)'
-                    percentage={percentge}
-                >
-                    {percentge}%
-                </PrograssBar>
+            <div className='container'>
+                <div className="doughnut">
+                    <PrograssBar 
+                        percentColor='var(--lines-color)'
+                        emptyColor='var(--secondry-color)'
+                        percentage={percentge}
+                    >
+                        {percentge}%
+                    </PrograssBar>
 
-                <h2>HTML</h2>     
+                    <h2>HTML</h2>     
+                </div>
+                {/* CSS skill */}
+                <div className="doughnut">
+                    <PrograssBar 
+                        percentColor='var(--lines-color)'
+                        emptyColor='var(--secondry-color)'
+                        percentage={88}
+                    >
+                        {88}%
+                    </PrograssBar>
+
+                    <h2>CSS</h2>     
+                </div>
+                {/* javaScript */}
+                <div className="doughnut">
+                    <PrograssBar 
+                        percentColor='var(--lines-color)'
+                        emptyColor='var(--secondry-color)'
+                        percentage={90}
+                    >
+                        {90}%
+                    </PrograssBar>
+
+                    <h2>javaScript</h2>     
+                </div>
             </div>
-
-            
-
         </section>
             
     )
