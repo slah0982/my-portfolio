@@ -1,23 +1,30 @@
-import { FaCss3, FaGithub, FaHtml5 } from 'react-icons/fa'
+import {  FaGithub } from 'react-icons/fa'
 import MainHeader from './main-header'
 import './projects.css'
+import projects from './projectsData'
 
-const imgSrcs = './assets/projects/pr_1.png'
+
+
 
 export default function Projects(){
 
 
     return(
         <section id="projects">
+            
             <MainHeader title={"My projects"} />
 
             <div className='container'>
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
-                <ProjectCard />
+                {projects.map(pr => 
+                    <ProjectCard
+                        key={pr.id}
+                        imgSrc={pr.src}
+                        githubLink={pr.link}
+                        title={pr.title}
+                        description={pr.description}
+                        techIcons={pr.techIcons}
+                    />
+                )}
             </div>
         </section>
     )
@@ -25,27 +32,25 @@ export default function Projects(){
 
 
 function ProjectCard({
+    imgSrc,
+    githubLink,
     title,
     description,
-    imgSrc
+    techIcons
 }){
     return(
         <div className='project-card'>
-            <img src={imgSrcs} alt='project' draggable='false'/>j
+            <img src={imgSrc} alt='project' draggable='false'/>j
             <div className='overlay'>
-                <a className='code-link row-1' href='/#'>
+                <a className='code-link row-1' href={githubLink}>
                     <FaGithub className='icon' /> <span> github link</span>
                 </a>
                 <div className='row-2'>
-                    <h4 className='title'>Landing pages</h4>
+                    <h4 className='title'>{title}</h4>
                     <p className='description'> 
-                        A group of landing pages with pure HTML and CSS.<br/>
-                        The pages desgins I have taken from interner and implemented in my own way.
+                        {description}
                     </p>
-                    <div className='tech-icons'>
-                        <FaHtml5 className='icon' style={{color: 'darkorange'}}/>
-                        <FaCss3 className='icon' style={{color: 'blue'}}/>
-                    </div>
+                    {techIcons}
                 </div>
             </div>
         </div>
