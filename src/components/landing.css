@@ -20,13 +20,7 @@
 .text .roles{
     color: var(--secondry-color);
 }
-.text .icons{
-    display: flex;
-    gap: 10px;
-}
-.text .icons .i{
-    font-size: 1.5rem;
-}
+
 
 
 .img{

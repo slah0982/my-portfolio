@@ -1,5 +1,6 @@
 import './App.css';
 import Cursor from './components/animated cursor';
+import Contact from './components/contact';
 import Header from './components/header';
 import Landing from './components/landing';
 import Projects from './components/projects';
@@ -13,6 +14,7 @@ function App() {
       <Landing />
       <Skills />
       <Projects />
+      <Contact />
     </div>
   );
 }

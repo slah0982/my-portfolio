@@ -1,9 +1,8 @@
 import "./landing.css"
 import Typewriter from 'typewriter-effect'
-import { FaFacebookF, FaWhatsapp } from "react-icons/fa6";
-import { PiTelegramLogo } from "react-icons/pi";
 import { motion } from "framer-motion"
 import { useState, useEffect} from "react";
+import SoicalMediaIcons from "./Soical media";
 
 
 
@@ -38,11 +37,7 @@ function Text(){
             <p className="info">
                 I am passionate about building excellent software that improves the lives of those around me. I specialize in creating software for clients ranging from individuals and small-businesses all the way to large enterprise corporations. What would you do if you had a software expert available at your fingertips?
             </p>
-            <div className="icons">
-                <a href="/"><FaFacebookF title="facebook" className="i"/></a>
-                <a href="/"><FaWhatsapp title="WhatsApp" className="i"/></a>
-                <a href="/"><PiTelegramLogo title="Telegram" className="i"/></a>       
-            </div>
+            <SoicalMediaIcons/>
         </div>
     )
 }
