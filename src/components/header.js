@@ -15,15 +15,15 @@ export default function Header() {
         },
         {
             name: 'SKILLS',
-            link: '/#SKILLS',
+            link: '/#skills',
         },
         {
             name: 'PROJECTS',
-            link: '/#PROJECTS',
+            link: '/#projects',
         },
         {
             name: 'CONTACT',
-            link: '/#CONTACT',
+            link: '/#contact',
         },
     ];
 

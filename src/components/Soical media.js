@@ -11,9 +11,9 @@ export default function SoicalMediaIcons(){
                 gap: '10px'
             }}
         >
-                <a href="/"><FaFacebookF title="facebook" style={IStyle}/></a>
-                <a href="/"><FaWhatsapp title="WhatsApp" style={IStyle}/></a>
-                <a href="/"><PiTelegramLogo title="Telegram" style={IStyle}/></a>       
-            </div>
+            <a href="/"><FaFacebookF title="facebook" style={IStyle}/></a>
+            <a href="/"><FaWhatsapp title="WhatsApp" style={IStyle}/></a>
+            <a href="/"><PiTelegramLogo title="Telegram" style={IStyle}/></a>       
+        </div>
     )
 }
