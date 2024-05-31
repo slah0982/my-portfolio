@@ -14,9 +14,10 @@
     align-items: center;
     gap: 3px;
     user-select: none;
+    font-size: 2rem;
 }
 .logo img{
-    width: 4rem;
+    width: 3rem;
 }
 .collapse{
     flex-grow: 0;

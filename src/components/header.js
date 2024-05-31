@@ -36,7 +36,7 @@ export default function Header() {
             <a href='/'>
                 <h1 className='logo'>
                     <img src={codingImg} alt='logo img' />
-                    Salah Portfolio
+                    Salah Almaghrby
                 </h1>
             </a>
             <Navbar.Toggle aria-controls="navbarScroll" className='toggle'/>

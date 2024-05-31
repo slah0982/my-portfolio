@@ -2,7 +2,7 @@ import {  FaGithub } from 'react-icons/fa'
 import MainHeader from './main-header'
 import './projects.css'
 import projects from './projectsData'
-
+import { motion } from 'framer-motion'
 
 
 
@@ -18,8 +18,10 @@ export default function Projects(){
                 {projects.map(pr => 
                     <ProjectCard
                         key={pr.id}
+                        id={pr.id}
                         imgSrc={pr.src}
-                        githubLink={pr.link}
+                        githubLink={pr.code}
+                        link = {pr.link}
                         title={pr.title}
                         description={pr.description}
                         techIcons={pr.techIcons}
@@ -34,17 +36,28 @@ export default function Projects(){
 function ProjectCard({
     imgSrc,
     githubLink,
+    link,
     title,
     description,
-    techIcons
+    techIcons,
+    id
 }){
     return(
-        <div className='project-card'>
+        <motion.div
+            initial={{ opacity: 0, y: 50}}
+            whileInView={{ opacity: 1, y: 0}}
+            viewport={{ once: true}}
+            transition={{duration: id > 3 ? 1 : 1.5, delay: 0.5}}
+            className='project-card'   
+         >
             <img src={imgSrc} alt='project' draggable='false'/>j
-            <div className='overlay'>
-                <a className='code-link row-1' href={githubLink}>
+            <a href={link} target='blank' className='overlay'>
+                {githubLink ?
+                
+                <a className='code-link row-1' target='blank' href={githubLink}>
                     <FaGithub className='icon' /> <span> github link</span>
-                </a>
+                </a> : <div></div>
+                }
                 <div className='row-2'>
                     <h4 className='title'>{title}</h4>
                     <p className='description'> 
@@ -52,7 +65,7 @@ function ProjectCard({
                     </p>
                     {techIcons}
                 </div>
-            </div>
-        </div>
+            </a>
+        </motion.div>
     )
 }

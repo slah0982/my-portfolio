@@ -14,8 +14,10 @@ export default function PrograssBar({
                 height: `${size}px`,
                 width: `${size}px`,
             }}
-            animate={{background: [`conic-gradient(${percentColor} 0, ${emptyColor} 0)`,`conic-gradient(${percentColor} ${percentage}%, ${emptyColor} 0)`]}}
-            transition={{duration: 2}}
+            initial={{ background: `conic-gradient(${percentColor} 0, ${emptyColor} 0)`}}
+            whileInView={{background: `conic-gradient(${percentColor} ${percentage}%, ${emptyColor} 0)`}}
+            viewport={{once: true}}
+            transition={{duration: 1.5}}
             className="prograss"
         > 
             <div
@@ -25,7 +27,9 @@ export default function PrograssBar({
                     width: `${thick}%`,
                    background: 'var(--primary-color)' 
                 }}
-            >{children}</div>
+            >
+                {children}
+            </div>
         </motion.div>
     )
 }

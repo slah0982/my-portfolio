@@ -1,5 +1,4 @@
 import './skills.css'
-import { useEffect, useRef, useState } from 'react';
 import PrograssBar from './skill-prograss';
 import MainHeader from './main-header';
 
@@ -7,38 +6,18 @@ import MainHeader from './main-header';
 
 
 export default function Skills(){
-    const [percentge,setPercentage] = useState(0);
-    const skillsRef = useRef(null);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (isElementInViewport(skillsRef.current)) {
-                console.log('showed')
-                setPercentage(97)
-            }
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [skillsRef]);
-
-
-
-
 
     return(
-        <section ref={skillsRef} id="skills">
+        <section id="skills">
             <MainHeader title={"My Skills"}/>
             <div className='container'>
                 <div className="doughnut">
                     <PrograssBar 
                         percentColor='var(--lines-color)'
                         emptyColor='var(--secondry-color)'
-                        percentage={percentge}
+                        percentage={90}
                     >
-                        {percentge}%
+                        {90}%
                     </PrograssBar>
 
                     <h2>HTML</h2>     
@@ -75,12 +54,12 @@ export default function Skills(){
 
 
 // check if the element is viwed of not
-const isElementInViewport = (el) => {
-    if (!el) return false;
-    const rect = el.getBoundingClientRect();
-    console.log(rect,document.documentElement.clientHeight,window.innerHeight)
-    return (
-        rect.top >= 0 - 200 &&
-        rect.bottom <= document.documentElement.clientHeight + 400
-    );
-};
+// const isElementInViewport = (el) => {
+//     if (!el) return false;
+//     const rect = el.getBoundingClientRect();
+//     console.log(rect,document.documentElement.clientHeight,window.innerHeight)
+//     return (
+//         rect.top >= 0 - 200 &&
+//         rect.bottom <= document.documentElement.clientHeight + 400
+//     );
+// };

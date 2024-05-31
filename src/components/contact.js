@@ -1,6 +1,7 @@
 import SoicalMediaIcons from './Soical media'
 import './contact.css'
 import MainHeader from './main-header'
+import OnviewAnmation from './onviewAnmation'
 
 export default function Contact(){
     return(
@@ -8,7 +9,9 @@ export default function Contact(){
             <MainHeader title='CONTACT'/>
             <div className='container'>
                 <div className='soical-media'>
+                    <OnviewAnmation dir='x' dirValue={-100}>
                     <h1>Soical media</h1>
+                    </OnviewAnmation>
                     <SoicalMediaIcons />
                 </div>
                 <form>
