@@ -40,9 +40,11 @@
 }
 
 .project-card .description{
-    margin-bottom: 0;
+    margin-bottom: 3px;
 }
 
 .project-card .tech-icons{
-    font-size: 1rem;
+    font-size: 1.3rem;
+    display: flex;
+    gap: 3px;
 }
