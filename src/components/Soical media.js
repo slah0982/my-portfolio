@@ -12,9 +12,9 @@ export default function SoicalMediaIcons(){
                 gap: '10px'
             }}
         >
-           <OnviewAnmation duration={0.5}> <a href="/"><FaFacebookF title="facebook" style={IStyle}/></a></OnviewAnmation>
-           <OnviewAnmation duration={1}><a href="/"><FaWhatsapp title="WhatsApp" style={IStyle}/></a></OnviewAnmation>
-           <OnviewAnmation><a href="/"><PiTelegramLogo title="Telegram" style={IStyle}/></a>  </OnviewAnmation>     
+           <OnviewAnmation duration={0.5}> <a href="https://www.facebook.com/profile.php?id=100008109253460" target="blank"><FaFacebookF title="facebook" style={IStyle}/></a></OnviewAnmation>
+           <OnviewAnmation duration={1}><a href="https://wa.me/+218910153246" target="blank"><FaWhatsapp title="WhatsApp" style={IStyle}/></a></OnviewAnmation>
+           <OnviewAnmation><a href="https://t.me/+218910153246"><PiTelegramLogo title="Telegram" style={IStyle}/></a>  </OnviewAnmation>     
         </div>
     )
 }

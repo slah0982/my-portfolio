@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://slah0982.github.io/my-portfolio",
+  "comment": "https://slah0982.github.io/my-portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.2",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^11.1.9",
     "rc-progress": "^4.0.0",
     "react": "^18.3.1",
