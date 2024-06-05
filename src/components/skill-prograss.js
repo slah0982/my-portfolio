@@ -1,9 +1,9 @@
 import './skill-prograss.css'
 import{motion} from "framer-motion"
-export default function PrograssBar({
+export default function SkillsProgress({
     thick = 70,
-    percentColor = 'green',
-    emptyColor = '#777',
+    percentColor = 'var(--lines-color)',
+    emptyColor = 'var(--secondry-color)',
     percentage = 50,
     size = 200,
     children,
@@ -25,7 +25,7 @@ export default function PrograssBar({
                 style={{
                     height: `${thick}%`,
                     width: `${thick}%`,
-                   background: 'var(--primary-color)' 
+                   background: 'var(--third-color)' 
                 }}
             >
                 {children}

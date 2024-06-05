@@ -4,6 +4,8 @@
     justify-content: center;
     align-items: center;
     transition: 5s;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px var(--primary-color);
 }
 .inner-contents{
     border-radius: 50%;

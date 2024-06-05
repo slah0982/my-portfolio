@@ -2,6 +2,7 @@
     text-align: center;
     color: var(--text-color);
     min-height: var(--sectons-hight);
+    background-color: #024e44;
 }
 
 #skills .container{

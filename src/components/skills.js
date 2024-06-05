@@ -1,6 +1,6 @@
 import './skills.css'
-import PrograssBar from './skill-prograss';
 import MainHeader from './main-header';
+import SkillsProgress from './skill-prograss';
 
 
 
@@ -11,42 +11,27 @@ export default function Skills(){
         <section id="skills">
             <MainHeader title={"My Skills"}/>
             <div className='container'>
+                
+
                 <div className="doughnut">
-                    <PrograssBar 
-                        percentColor='var(--lines-color)'
-                        emptyColor='var(--secondry-color)'
-                        percentage={90}
-                    >
-                        {90}%
-                    </PrograssBar>
+                   <SkillsProgress percentage={97}>97 %</SkillsProgress>
 
                     <h2>HTML</h2>     
                 </div>
                 {/* CSS skill */}
                 <div className="doughnut">
-                    <PrograssBar 
-                        percentColor='var(--lines-color)'
-                        emptyColor='var(--secondry-color)'
-                        percentage={88}
-                    >
-                        {88}%
-                    </PrograssBar>
+                    <SkillsProgress percentage={93} >93 %</SkillsProgress>
 
                     <h2>CSS</h2>     
                 </div>
                 {/* javaScript */}
                 <div className="doughnut">
-                    <PrograssBar 
-                        percentColor='var(--lines-color)'
-                        emptyColor='var(--secondry-color)'
-                        percentage={90}
-                    >
-                        {90}%
-                    </PrograssBar>
+                    <SkillsProgress percentage={90}> 90 %</SkillsProgress>
 
                     <h2>javaScript</h2>     
                 </div>
             </div>
+
         </section>
             
     )
