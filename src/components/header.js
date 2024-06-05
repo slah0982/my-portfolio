@@ -11,19 +11,19 @@ export default function Header() {
     const navList = [
         {
             name: 'HOME',
-            link: '/#home',
+            link: './#home',
         },
         {
             name: 'SKILLS',
-            link: '/#skills',
+            link: './#skills',
         },
         {
             name: 'PROJECTS',
-            link: '/#projects',
+            link: './#projects',
         },
         {
             name: 'CONTACT',
-            link: '/#contact',
+            link: './#contact',
         },
     ];
 
@@ -33,7 +33,7 @@ export default function Header() {
 
     return (
         <Navbar expand="lg" className='header'>
-            <a href='/'>
+            <a href='./'>
                 <h1 className='logo'>
                     <img src={codingImg} alt='logo img' />
                     Salah Almaghrby
