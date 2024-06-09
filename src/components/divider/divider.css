@@ -1,20 +1,9 @@
-.custom-shape-divider-bottom-1717505062 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+.cont{
+    height: 120px;
+    max-width: 100%;
     overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+    background-image: url('../../../public/assets/divider.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
-.custom-shape-divider-bottom-1717505062 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 89px;
-}
-
-/* .custom-shape-divider-bottom-1717505062 .shape-fill {
-    fill: #024e44;
-} */

@@ -9,8 +9,15 @@
     display: flex;
     padding: 20px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 #skills .doughnut{
     max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
