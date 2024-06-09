@@ -28,7 +28,7 @@
     flex-grow: 1;
 }
 #contact .soical-media{
-    flex-wrap: 1;
+    flex-grow: 1;
 }
 
 #contact form .input{
