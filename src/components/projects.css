@@ -1,6 +1,6 @@
 #projects .container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr)); /* Creates 3 equal columns */
     gap: 5px; /* Optional: Adds space between the items */
 }
 
