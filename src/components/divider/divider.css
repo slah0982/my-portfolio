@@ -1,9 +1,0 @@
-.cont{
-    height: 120px;
-    max-width: 100%;
-    overflow: hidden;
-    background-image: url('../../../public/assets/divider.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
